@@ -3,87 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomcat Deployment Test</title>
+    <title>Personal Portfolio</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
         }
         .container {
-            background-color: white;
-            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 500px;
-        }
-        h1 {
-            color: #d9534f; /* Tomcat Red */
-            margin-bottom: 10px;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-        .status-badge {
-            background-color: #5cb85c; /* Success Green */
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #0275d8;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #025aa5;
-        }
-        #js-output {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #0275d8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div style="font-size: 50px;">😺</div>
-        
-        <h1>Deployment Successful!</h1>
-        <div class="status-badge">Status: Active</div>
-        
-        <p>If you are seeing this page, your HTML file has been successfully deployed to the Apache Tomcat server.</p>
-        
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-        
-        <p>Click the button below to test JavaScript execution:</p>
-        <button onclick="showServerTime()">Check Browser Time</button>
-        
-        <p id="js-output"></p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm [Your Name], a [Your Profession].</p>
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
     </div>
-
-    <script>
-        function showServerTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString();
-            document.getElementById('js-output').innerHTML = "Client Time: " + timeString;
-        }
-    </script>
 </body>
 </html>
